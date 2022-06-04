@@ -87,3 +87,15 @@ body {
 .footer_img {
     padding-right: 50px;
 }
+
+@media screen and (max-width: 600px) {
+    #main_nav, #signin, #hero_image {
+        display: none;
+    }
+    #left_content, .footer p {
+        max-width: 100%;
+    }
+    #footer_img {
+        max-width: 50%;
+    }
+}
