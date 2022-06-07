@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #F2EDE5;
+    font-family: 'Inter', sans-serif;
+    max-width: 80%;
+    margin: auto;
+}
+
+.header { /*Header Content*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2.5%;
+}
+
+.header a {           
+    text-decoration: none;
+    color: #7A7878;
+    font-size: 0.9vw;
+    padding: 15px 15px;
+}
+#top-nav , #nav-btns  {        
+    padding: 15px 0;
+}
+#nav-btns :last-child, #trial-btn {
+    background-color: #1E391D;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 4px;
+    font-size: 0.9vw;
+    text-decoration: none;    
+}
+div a {
+    padding: 0 15px;
+}
+#mobile-menu {
+    display: none;
+} /*Header Content*/
+
+#content { /*Main Content*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.main-content {    
+    float: left;
+    max-width: 60%;
+    margin-top: 5%;    
+}
+.main-content h1 {font-size: 4vw;}
+.main-content p, .main-content div {color:#7A7878;}
+.main-content div img {padding: 0 10px;}
+.main-content img{
+    max-width: 100%;
+    height: auto;
+} /*Main Content*/
+
+#footer {margin-top: 5%;} /* Footer Content */
+#footer p {
+    text-align: center;
+    color: #7A7878;
+}
+#footer-img {
+    display: flex;
+    justify-content: space-around;
+    max-width: 90%;
+    margin: auto;
+} /* Footer Content */
+
+@media only screen and (max-width: 600px) {
+    body {
+        max-width: 85%;
+        margin: auto;
+    }
+
+    #top-nav, #nav-btns { /*Header Content*/
+        display: none;       
+    }
+    #mobile-menu {
+        display: contents;        
+    } /*Header Content*/
+
+    #hero-image { /*Main Content*/
+        display: none;
+    }
+    .main-content {
+        max-width: 100%;
+    }
+    .main-content h1 {font-size: 9vw;}
+    #trial-btn {font-size: 4vw; margin: 10px 0;} /*Main Content*/
+
+    #footer {margin-top: 10%;}
+    #footer-img {
+        display: flex;
+        flex-wrap: wrap;    
+    } #footer-img img {max-width: 90%;}
+}
