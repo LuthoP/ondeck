@@ -8,6 +8,37 @@ body {
     margin: auto;
 }
 
+.dropdown {
+    position: relative;        
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 380px;
+    height: auto;
+    margin-top: 15px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;    
+    z-index: 1;
+    transform: translateX(-10%);
+} 
+.dropdown-content p {
+    color: #707C8B;
+    padding-left: 25px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.dropdown-content span {
+    position: relative;
+    top: 0;
+    color: #1E2D45;
+    font-weight: bold;    
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .header { /*Header Content*/
     display: flex;
     align-items: center;
