@@ -76,14 +76,14 @@ div a {
     }
 
     #top-nav, #nav-btns { /*Header Content*/
-        display: none;       
+        display: none;  /* Hides the top navigation and the log in butttons on the header. */ 
     }
     #mobile-menu {
-        display: contents;        
+        display: contents; /* Displays the Hamburger menu on mobile screens. */   
     } /*Header Content*/
 
     #hero-image { /*Main Content*/
-        display: none;
+        display: none; /* Hides he hero image on mobile screens. */
     }
     .main-content {
         max-width: 100%;
@@ -91,7 +91,7 @@ div a {
     .main-content h1 {font-size: 9vw;}
     #trial-btn {font-size: 4vw; margin: 10px 0;} /*Main Content*/
 
-    #footer {margin-top: 10%;}
+    #footer {margin-top: 10%;} /* An attempt to make footer logos span two columns on mobile devices.*/
     #footer-img {
         display: flex;
         flex-wrap: wrap;    
