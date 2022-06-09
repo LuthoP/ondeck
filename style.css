@@ -49,7 +49,7 @@ body {
 .header a {           
     text-decoration: none;
     color: #7A7878;
-    font-size: 0.9vw;
+    font-size: 15px;
     padding: 15px 15px;
 }
 #top-nav , #nav-btns  {        
@@ -60,7 +60,7 @@ body {
     color: white;
     padding: 15px 25px;
     border-radius: 4px;
-    font-size: 0.9vw;
+    font-size: 15px;
     text-decoration: none;    
 }
 div a {
@@ -88,7 +88,10 @@ div a {
     height: auto;
 } /*Main Content*/
 
-#footer {margin-top: 5%;} /* Footer Content */
+#footer {
+    margin-top: 5%;
+    margin-bottom: 5%;
+} /* Footer Content */
 #footer p {
     text-align: center;
     color: #7A7878;
@@ -100,7 +103,7 @@ div a {
     margin: auto;
 } /* Footer Content */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
     body {
         max-width: 85%;
         margin: auto;
@@ -119,12 +122,16 @@ div a {
     .main-content {
         max-width: 100%;
     }
-    .main-content h1 {font-size: 9vw;}
+    .main-content h1 {font-size: 40px;}
     #trial-btn {font-size: 4vw; margin: 10px 0;} /*Main Content*/
 
-    #footer {margin-top: 10%;} /* An attempt to make footer logos span two columns on mobile devices.*/
+    #footer {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    } /* An attempt to make footer logos span two columns on mobile devices.*/
     #footer-img {
         display: flex;
         flex-wrap: wrap;    
-    } #footer-img img {max-width: 90%;}
+    } #footer-img div {padding: 10px;}
+    #trial-btn {font-size: 15px;}
 }
